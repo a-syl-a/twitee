@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Escapes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+                * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #222;
+            color: #FFFFFF;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: url('img/solohd.png') no-repeat center center/cover;
+            background-size: cover;
+            color: white;
+            padding: 100px 50px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .header p {
+            font-size: 1rem;
+        }
+        
+        nav {
+            background-color: #222;
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff00a6;
+            border-radius: 5px;
+
+        }
+
+        .content {
+            padding: 2rem 5rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        .section:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+        .section:nth-child(even) {
+        flex-direction: row-reverse;
+        }
+
+        .section:nth-child(even) .number {
+        right: 25px; 
+        left: 100px;
+
+        
+        }
+
+        .section img {
+            width: 100%;
+            max-width: 500px;
+            height: 500px;
+            object-fit: cover;
+            margin: 0 2rem;
+            border-radius: 10px;
+        }
+
+        .section-content {
+            flex: 1;
+            padding: 1rem;
+        }
+
+        .section-content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: whitesmoke;
+        }
+
+        .section-content p {
+            margin-bottom: 1.5rem;
+            color: whitesmoke;
+            
+        }
+
+        .number {
+            font-size: 7rem;
+            opacity: 0.1;
+            position: absolute;
+            z-index: -1;
+            color: #fc95c8;
+            font-weight: bold;
+        }
+
+        nav ul li {
+        position: relative;
+            }
+
+        nav ul li .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            z-index: 10;
+        }
+
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+
+        nav ul li .dropdown li {
+            padding: 5px 15px;
+        }
+
+        nav ul li .dropdown li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            transition: 0.3s ease;
+        }
+
+        nav ul li .dropdown li a:hover {
+            background-color: #ff0099;
+            border-radius: 3px;
+        }
+        @media (max-width: 768px) {
+    nav ul li .dropdown {
+        position: absolute;
+        left: 0;
+        top: 100%; 
+        background-color: #333; 
+    }
+
+        }
+        
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">twrite</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Blog</a>
+                
+                <ul class="dropdown">
+                    <li><a href="#">Plan Budget Friendly Vacation </a></li>
+                    <li><a href="#">Top Travel Destination</a></li>
+                    <li><a href="#">Benefits of Solo Travel</a></li>
+                    <li><a href="#">Travel Responsibly</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#" style="background: #007bff; padding: 8px 15px; border-radius: 5px; color: white;">Message now</a></li>
+        </ul>
+    </nav>
+
+    <div class="header">
+        <h1>
+            The Benefits of Solo Travel: Exploring the World on Your Own</h1>
+        <p> Solo travel is becoming increasingly popular, with more people choosing to embark on adventures alone. While the idea of traveling solo may seem daunting at first, the benefits of exploring the world on your own are immense. </p>
+    </div>
+
+    <div class="content">
+        <div class="section">
+            <span class="number">01</span>
+            <div class="section-content">
+                <h2>Empowerment and Confidence</h2>
+                <p>One of the greatest benefits of solo travel is the empowerment it brings. Navigating new places, making decisions on your own, and solving problems along the way can boost your confidence. Every new challenge you face and overcome while traveling solo helps build resilience and self-assurance. </p>
+                
+            </div>
+            <img src="img/conf.png" alt="Hiking">
+        </div>
+
+        <div class="section">
+            <span class="number">02</span>
+            <img src="img/free.jpg" alt="Gear">
+            <div class="section-content">
+                <h2>Flexibility and Freedom</h2>
+                <p>When you travel alone, you have the ultimate freedom to create your own itinerary. Want to stay longer at a museum? Feel like changing your plans on a whim? Solo travel allows you to be spontaneous and tailor your trip exactly to your desires without worrying about accommodating anyone else’s preferences.</p>
+               
+            </div>
+        </div>
+
+        <div class="section">
+            <span class="number">03</span>
+            <div class="section-content">
+                <h2> Self-Discovery and Personal Growth</h2>
+                <p>Solo travel provides an excellent opportunity for self-discovery and personal growth. Without the distractions of friends or family, you can focus on yourself and gain a deeper understanding of who you are. Whether it’s navigating unfamiliar cities, learning new languages, or facing challenges on your own, solo travel encourages self-reliance and builds confidence. </p>    
+            </div>
+            <img src="img/disc.jpg" alt="Map">
+        </div>
+
+        <div class="section">
+            <span class="number">04</span>
+            <img src="img/meet.jpg" alt="Weather">
+            <div class="section-content">
+                <h2>Opportunities to Meet New People</h2>
+                <p>Cape Town is a place where adventure meets natural beauty. From hiking Table Mountain to exploring the vibrant neighborhoods, Cape Town has much to offer. The city is famous for its stunning beaches, wildlife safaris, and a rich cultural history.</p>
+               
+            </div>
+        </div>
+
+        <div class="section">
+            <span class="number">05</span>
+            <div class="section-content">
+                <h2>Building Independence</h2>
+                <p>Traveling alone requires you to be resourceful and adaptable. Whether it’s navigating transportation systems, finding accommodations, or solving unexpected problems, solo travel helps you develop essential life skills. You learn how to handle uncertainty, make decisions independently, and solve problems creatively. </p>
+               
+            </div>
+            <img src="img/inde.jpg" alt="Trail Essentials">
+        </div>
+    </div>
+
+</body>
+</html>

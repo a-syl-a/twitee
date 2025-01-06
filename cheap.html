@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Escapes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+                * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #222;
+            color: #FFFFFF;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: url('img/tix.png') no-repeat center center/cover;
+            background-size: cover;
+            color: white;
+            padding: 100px 50px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .header p {
+            font-size: 1rem;
+        }
+        
+        nav {
+            background-color: #222;
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff00a6;
+            border-radius: 5px;
+
+        }
+
+        .content {
+            padding: 2rem 5rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        .section:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+        .section:nth-child(even) {
+        flex-direction: row-reverse;
+        }
+
+        .section:nth-child(even) .number {
+        right: 25px; 
+        left: 100px;
+
+        
+        }
+
+        .section img {
+            width: 100%;
+            max-width: 500px;
+            height: 500px;
+            object-fit: cover;
+            margin: 0 2rem;
+            border-radius: 10px;
+        }
+
+        .section-content {
+            flex: 1;
+            padding: 1rem;
+        }
+
+        .section-content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: whitesmoke;
+        }
+
+        .section-content p {
+            margin-bottom: 1.5rem;
+            color: whitesmoke;
+            
+        }
+
+        .number {
+            font-size: 7rem;
+            opacity: 0.1;
+            position: absolute;
+            z-index: -1;
+            color: #fc95c8;
+            font-weight: bold;
+        }
+
+        nav ul li {
+        position: relative;
+            }
+
+        nav ul li .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            z-index: 10;
+        }
+
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+
+        nav ul li .dropdown li {
+            padding: 5px 15px;
+        }
+
+        nav ul li .dropdown li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            transition: 0.3s ease;
+        }
+
+        nav ul li .dropdown li a:hover {
+            background-color: #ff0099;
+            border-radius: 3px;
+        }
+        @media (max-width: 768px) {
+    nav ul li .dropdown {
+        position: absolute;
+        left: 0;
+        top: 100%; 
+        background-color: #333; 
+    }
+
+        }
+        
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">twrite</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Blog</a>
+                
+                <ul class="dropdown">
+                    <li><a href="cheap.html">Plan Budget Friendly Vacation </a></li>
+                    <li><a href="top.html">Top Travel Destination</a></li>
+                    <li><a href="solo.html">Benefits of Solo Travel</a></li>
+                    <li><a href="resp.html">Travel Responsibly</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#" style="background: #007bff; padding: 8px 15px; border-radius: 5px; color: white;">Message now</a></li>
+        </ul>
+    </nav>
+
+    <div class="header">
+        <h1>How to Plan a Budget-Friendly Vacation</h1>
+        <p> Traveling is an exciting way to explore new cultures, meet new people, and enjoy different landscapes. As 2025 approaches, several destinations around the world are gaining attention for their unique charm, breathtaking beauty, and exciting experiences. Whether you're seeking adventure, relaxation, or cultural immersion, the top best travel destinations for 2025 have something for everyone. In this article, we will explore the must-visit spots for the coming year, focusing on destinations that are sure to make your travel dreams come true. </p>
+    </div>
+
+    <div class="content">
+        <div class="section">
+            <span class="number">01</span>
+            <div class="section-content">
+                <h2>Travel During the Off-Season</h2>
+                <p>Avoid peak tourist seasons to save on flights, accommodations, and activities. Off-season travel not only lowers costs but also gives you the chance to enjoy attractions without crowds. Research your destination to find the best times to visit while staying economical. </p>
+                
+            </div>
+            <img src="img/off.png" alt="Hiking">
+        </div>
+
+        <div class="section">
+            <span class="number">02</span>
+            <img src="img/deals.png" alt="Gear">
+            <div class="section-content">
+                <h2>Hunt for Flight Deals</h2>
+                <p>Airfare is often one of the most significant travel expenses. Use tools like Google Flights, Skyscanner, or Hopper to track prices and find the best deals. Be flexible with your travel dates and consider budget airlines or connecting flights to cut costs.</p>
+               
+            </div>
+        </div>
+
+        <div class="section">
+            <span class="number">03</span>
+            <div class="section-content">
+                <h2>Save on Accommodation</h2>
+                <p>Ditch expensive hotels for more affordable options like hostels, vacation rentals, or budget-friendly guesthouses. Platforms like Airbnb and Booking.com offer great deals. If you’re adventurous, try house-sitting or staying with locals through sites like Couchsurfing. </p>    
+            </div>
+            <img src="img/hotel.png" alt="Map">
+        </div>
+
+        <div class="section">
+            <span class="number">04</span>
+            <img src="img/food.png" alt="Weather">
+            <div class="section-content">
+                <h2>Embrace Local Cuisine</h2>
+                <p>Instead of dining at high-end restaurants, explore local eateries and street food. Not only is this cheaper, but it also gives you a more authentic taste of the culture. Visit local markets to stock up on snacks or prepare your meals if your accommodation has a kitchen.</p>
+               
+            </div>
+        </div>
+
+        <div class="section">
+            <span class="number">05</span>
+            <div class="section-content">
+                <h2>Prioritize Free and Low-Cost Activities</h2>
+                <p>Many destinations offer free walking tours, public parks, museums with discounted admission days, and cultural festivals. Research ahead of time to plan your itinerary around affordable activities.</p>
+               
+            </div>
+            <img src="img/act.png" alt="Trail Essentials">
+        </div>
+    </div>
+
+</body>
+</html>

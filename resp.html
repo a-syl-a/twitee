@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Escapes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+                * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #222;
+            color: #FFFFFF;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: url('img/sus.jpg') no-repeat center center/cover;
+            background-size: cover;
+            color: white;
+            padding: 100px 50px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .header p {
+            font-size: 1rem;
+        }
+        
+        nav {
+            background-color: #222;
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff00a6;
+            border-radius: 5px;
+
+        }
+
+        .content {
+            padding: 2rem 5rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        .section:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+        .section:nth-child(even) {
+        flex-direction: row-reverse;
+        }
+
+        .section:nth-child(even) .number {
+        right: 25px; 
+        left: 100px;
+
+        
+        }
+
+        .section img {
+            width: 100%;
+            max-width: 500px;
+            height: 500px;
+            object-fit: cover;
+            margin: 0 2rem;
+            border-radius: 10px;
+        }
+
+        .section-content {
+            flex: 1;
+            padding: 1rem;
+        }
+
+        .section-content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: whitesmoke;
+        }
+
+        .section-content p {
+            margin-bottom: 1.5rem;
+            color: whitesmoke;
+            
+        }
+
+        .number {
+            font-size: 7rem;
+            opacity: 0.1;
+            position: absolute;
+            z-index: -1;
+            color: #fc95c8;
+            font-weight: bold;
+        }
+
+        nav ul li {
+        position: relative;
+            }
+
+        nav ul li .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            z-index: 10;
+        }
+
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+
+        nav ul li .dropdown li {
+            padding: 5px 15px;
+        }
+
+        nav ul li .dropdown li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            transition: 0.3s ease;
+        }
+
+        nav ul li .dropdown li a:hover {
+            background-color: #ff0099;
+            border-radius: 3px;
+        }
+        @media (max-width: 768px) {
+    nav ul li .dropdown {
+        position: absolute;
+        left: 0;
+        top: 100%; 
+        background-color: #333; 
+    }
+
+        }
+        
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">twrite</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Blog</a>
+                
+                <ul class="dropdown">
+                    <li><a href="cheap.html">Plan Budget Friendly Vacation </a></li>
+                    <li><a href="top.html">Top Travel Destination</a></li>
+                    <li><a href="solo.html">Benefits of Solo Travel</a></li>
+                    <li><a href="resp.html">Travel Responsibly</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#" style="background: #007bff; padding: 8px 15px; border-radius: 5px; color: white;">Message now</a></li>
+        </ul>
+    </nav>
+
+    <div class="header">
+        <h1> How to Travel Responsibly</h1>
+        <p> Sustainable tourism involves traveling in a way that ensures the preservation of natural resources and cultural heritage for future generations. Unlike traditional tourism, which often leads to over-exploitation of resources, sustainable tourism aims to reduce negative impacts and promote long-term benefits for both the environment and local economies. As 2025 approaches, several destinations around the world are gaining attention for their unique charm, breathtaking beauty, and exciting experiences. Whether you're seeking adventure, relaxation, or cultural immersion, the top best travel destinations for 2025 have something for everyone. In this article, we will explore the must-visit spots for the coming year, focusing on destinations that are sure to make your travel dreams come true. </p>
+    </div>
+
+    <div class="content">
+        <div class="section">
+            <span class="number">01</span>
+            <div class="section-content">
+                <h2>Choose Eco-Friendly Accommodations</h2>
+                <p>Many hotels, hostels, and resorts now prioritize sustainability by implementing eco-friendly practices such as energy conservation, water management, and waste reduction. When booking your accommodation, look for certifications like the Green Key or EarthCheck </p>
+                
+            </div>
+            <img src="img/eco.jpg" alt="Hiking">
+        </div>
+
+        <div class="section">
+            <span class="number">02</span>
+            <img src="img/trad.jpg" alt="Gear">
+            <div class="section-content">
+                <h2>Respect Local Cultures and Traditions</h2>
+                <p>Traveling responsibly involves respecting the cultural norms and traditions of the places you visit. Learn about the local customs, traditions, and etiquette before your trip to ensure that you are sensitive to the community’s way of life. Avoid engaging in behaviors that could be disrespectful or harmful to local culture, such as taking photos in sacred spaces without permission.</p>
+               
+            </div>
+        </div>
+
+        <div class="section">
+            <span class="number">03</span>
+            <div class="section-content">
+                <h2>Minimize Waste and Reduce Plastic Usage</h2>
+                <p>One of the most pressing environmental issues caused by tourism is plastic waste. To reduce your impact, carry reusable items like water bottles, shopping bags, and travel utensils. Many destinations are now offering refill stations for water bottles, so take advantage of these to avoid purchasing bottled water. </p>    
+            </div>
+            <img src="img/waste.jpeg" alt="Map">
+        </div>
+
+        <div class="section">
+            <span class="number">04</span>
+            <img src="img/trans.jpg" alt="Weather">
+            <div class="section-content">
+                <h2>Opt for Sustainable Transport</h2>
+                <p>Transportation is a significant contributor to carbon emissions, so choosing eco-friendly modes of transport is essential. When possible, use public transportation, rent bicycles, or walk to explore your destination. For longer journeys, consider trains or buses instead of flying, as they tend to have a lower environmental footprint.</p>
+               
+            </div>
+        </div>
+
+        <div class="section">
+            <span class="number">05</span>
+            <div class="section-content">
+                <h2>Support Local Businesses</h2>
+                <p>Many destinations offer opportunities to participate in conservation efforts, such as wildlife protection programs or community development projects. Volunteering during your travels is a rewarding way to give back to the places you visit while making a positive impact on the local environment and society.</p>
+               
+            </div>
+            <img src="img/buss.jpg" alt="Trail Essentials">
+        </div>
+    </div>
+
+</body>
+</html>
