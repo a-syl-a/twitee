@@ -1,204 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sustainable Escapes</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sustainable Escapes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
 
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #222;
-            color: #333;
-        }
+    body {
+      background-color: #121212;
+      color: #ffffff;
+    }
 
-        header {
-            
-            background-image: url("img/air.png");
-            background-size: cover;
-            color: white;
-            padding: 100px 50px;
-            text-align: center;
-        }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      background-color: #1f1f1f;
+      padding: 20px;
+    }
 
-        header h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
+    nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
 
-        nav {
-            background-color: #222;
-            padding: 20px;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
 
-        nav .logo {
-            font-size: 24px;
-            font-weight: 700;
-        }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+    }
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
+    nav ul li a:hover {
+      color: #ff007f;
+    }
+    .article-footer a {
+  background-color: #ff007f;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
 
-        nav ul li {
-            display: inline;
-        }
+.article-footer a:hover {
+  background-color: #e60073;
+}
+    header {
+      background: url('img/air.png') no-repeat center center/cover;
+      padding: 100px 20px;
+      text-align: center;
+      color: white;
+    }
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-        }
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
 
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
+    .search-bar input, .search-bar button {
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+    }
 
-        .search-bar {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
+    .search-bar input {
+      width: 60%;
+      margin-right: 10px;
+    }
 
-        .search-bar input {
-            width: 60%;
-            padding: 12px 15px;
-            border: 1px solid #ddd;
-            border-right: none;
-            border-radius: 5px 0 0 5px;
-            outline: none;
-        }
+    .search-bar button {
+      background-color: #ff007f;
+      color: white;
+      cursor: pointer;
+    }
 
-        section h2 {
-            color: whitesmoke;
-        }
+    .articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px; /* Increased gap for more spacing */
+}
 
-        a {
-            color: #004a64;
-            text-decoration: none;
-        }
+.article {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Added margin for extra spacing */
+}
 
-        .search-bar button {
-            padding: 12px 20px;
-            border: none;
-            background-color: #5c91a4;
-            color: white;
-            font-size: 16px;
-            border-radius: 0 5px 5px 0;
-            cursor: pointer;
-        }
+.article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
-        .search-bar button:hover {
-            background-color: #5c91a4;
-        }
+.article-content {
+  padding: 20px;
+  padding-top: 50px;
+}
 
-        section {
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+.article-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 20px;
+  color: #ccc;
+  margin-top: auto; 
+}
 
-        .title h2 {
-            color: #222;
-        }
+h2 {
+  font-size: 36px;
+  margin-bottom: 40px; /* Increased bottom margin for separation */
+}
 
-        .articles {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
+section {
+  padding: 80px 20px; /* Added more padding to the section for breathing space */
+}
 
-        .article {
-            background: whitesmoke;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
 
-        .article img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
+    .tag {
+      background-color: #ff007f;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      margin-bottom: 50px; 
+    }
 
-        .article-content {
-            padding: 20px;
-        }
 
-        .article-content .tag {
-            display: inline-block;
-            padding: 5px 10px;
-            background-color: #5c91a4;
-            color: white;
-            font-size: 12px;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-
-        .article-content h2 {
-            font-size: 20px;
-            margin-bottom: 10px;
-            line-height: 1.4;
-        }
-
-        .article-content p {
-            font-size: 14px;
-            color: #555;
-            margin-bottom: 15px;
-        }
-
-        .article-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 14px;
-            color: #777;
-            padding: 0 20px 20px;
-        }
-
-        .popular-articles {
-            margin-top: 40px;
-            color: whitesmoke;
-        }
-
-        .popular-articles h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .view-all {
-            display: inline-block;
-            margin-top: 20px;
-            color: #5c91a4;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        nav ul li a:hover {
-            background-color: #ff00a6;
-            border-radius: 5px;
-
-        }
-        
-        nav ul li {
-        position: relative;
-            }
-
-        nav ul li .dropdown {
+    nav ul li .dropdown {
             display: none;
             position: absolute;
             top: 100%; 
@@ -229,120 +171,117 @@
             background-color: #ff00bb;
             border-radius: 3px;
         }
-        @media (max-width: 768px) {
-    nav ul li .dropdown {
-        position: absolute;
-        left: 0;
-        top: 100%;
-        background-color: #333;
-    }
+
+        nav ul li a:hover {
+            background-color: #ff00a6;
+            border-radius: 5px;
 
         }
-        @media (min-width: 768px) {
-            .articles {
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-between;
+        
+        nav ul li {
+        position: relative;
             }
 
-            .article {
-                flex: 0 1 calc(48% - 10px);
-                max-width: calc(48% - 10px);
-            }
-        }
-    </style>
+
+  </style>
 </head>
 <body>
-    <nav>
-        <div class="logo">twrite</div>
-        <ul>
-            <li><a href="landing.html">Home</a></li>
-            <li><a href="#">Blog</a>
-                <ul class="dropdown">
-                    <li><a href="cheap.html">Plan Budget Friendly Vacation </a></li>
-                    <li><a href="top.html">Top Travel Destination</a></li>
-                    <li><a href="solo.html">Benefits of Solo Travel</a></li>
-                    <li><a href="resp.html">Travel Responsibly</a></li>
-                </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-            
-            <li><a href="#" style="background: #007bff; padding: 8px 15px; border-radius: 5px; color: white;">Message now</a></li>
+  <nav>
+    <div class="logo">twrite</div>
+    <ul>
+      <li><a href="landing.html">Home</a></li>
+      <li><a href="#">Blog</a>
+        <ul class="dropdown">
+            <li><a href="cheap.html">Plan Budget Friendly Vacation </a></li>
+            <li><a href="top.html">Top Travel Destination</a></li>
+            <li><a href="solo.html">Benefits of Solo Travel</a></li>
+            <li><a href="resp.html">Travel Responsibly</a></li>
         </ul>
-    </nav>
-    
-    <header>
-        <h1>Sustainable Escapes</h1>
-        <div class="search-bar">
-            <input type="text" placeholder="Search article...">
-            <button>Search</button>
-        </div>
-    </header>
+    </li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#" class="message-btn">Message Now</a></li>
+    </ul>
+  </nav>
 
-    <section>
-        <h2>Featured Articles</h2>
+  <header>
+    <h1>Sustainable Escapes</h1>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search article...">
+      <button onclick="searchArticles()">Search</button>
+    </div>
+  </header>
+
+  <section>
+    <h2>Featured Articles</h2>
+    <div class="articles" id="articleContainer">
+      <div class="article" data-title="Plan a Budget-Friendly Vacation">
+        <img src="img/cheap.jpg" alt="Featured Article" />
+        <div class="article-content">
+          <span class="tag">Featured</span>
+          <h2>Plan a Budget-Friendly Vacation</h2>
+          <p>Planning a vacation on a budget doesn't mean sacrificing fun or experiences.</p>
+        </div>
+        <div class="article-footer">
+          
+          <span><a href="cheap.html">Read more</a></span>
+        </div>
+      </div>
+
+      <div class="article" data-title="Top Travel Destinations for 2025">
+        <img src="img/top.jpg" alt="Featured Article" />
+        <div class="article-content">
+          <span class="tag">Featured</span>
+          <h2>Top Travel Destinations for 2025</h2>
+          <p>Discover exciting travel destinations for the upcoming year.</p>
+        </div>
+        <div class="article-footer">
+          
+          <span><a href="top.html">Read more</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="popular-articles">
+        <h2>Popular Articles</h2>
         <div class="articles">
             <div class="article">
-                <img src="img/cheap.jpg" alt="Featured Article">
+                <img src="img/solo.jpg" alt="Popular Article">
                 <div class="article-content">
                     <span class="tag">Featured</span>
                     <div class = "title">
-                    <h2>Plan a Budget-Friendly Vacation</h2>
+                    <h2>Benefits of Solo Travel: Exploring the World on Your Own</h2>
                     </div>
-                    <p>Planning a vacation on a budget doesn't mean sacrificing fun or experiences.</p>
+                    <p>Solo travel offers the freedom to explore the world on your own terms. </p>
                 </div>
                 <div class="article-footer">
-                    <span>Christine Almazan</span>
-                    <span><a href="cheap.html">Read more</a></span>
+                    <span><a href="solo.html">Read more</a></span>
                 </div>
             </div>
             <div class="article">
-                <img src="img/top.jpg" alt="Featured Article">
+                <img src="img/resp.jpg" alt="Popular Article">
                 <div class="article-content">
                     <span class="tag">Featured</span>
                     <div class = "title">
-                    <h2>Top Travel Destinations for 2025</h2>
+                    <h2>How to Travel Responsibly</h2>
                     </div>
-                    <p>Whether you're an adventure seeker or a culture enthusiast, these must-visit spots promise something for everyone in the coming year.</p>
+                    <p>Learn practical tips on how to reduce your carbon footprint while still enjoying the beauty of the world.</p>
                 </div>
                 <div class="article-footer">
-                    <span>Lyra Jemella Salvacion</span>
-                    <span><a href="top.html">Read more</a></span>
+                
+                    <span><a href="resp.html">Read more</a></span>
                 </div>
             </div>
-        </div>
+  </section>
 
-        <div class="popular-articles">
-            <h2>Popular Articles</h2>
-            <div class="articles">
-                <div class="article">
-                    <img src="img/solo.jpg" alt="Popular Article">
-                    <div class="article-content">
-                        <span class="tag">Featured</span>
-                        <div class = "title">
-                        <h2>Benefits of Solo Travel: Exploring the World on Your Own</h2>
-                        </div>
-                        <p>Solo travel offers the freedom to explore the world on your own terms. </p>
-                    </div>
-                    <div class="article-footer">
-                        <span>Andrei Laurel</span>
-                        <span><a href="solo.html">Read more</a></span>
-                    </div>
-                </div>
-                <div class="article">
-                    <img src="img/resp.jpg" alt="Popular Article">
-                    <div class="article-content">
-                        <span class="tag">Featured</span>
-                        <div class = "title">
-                        <h2>How to Travel Responsibly</h2>
-                        </div>
-                        <p>Learn practical tips on how to reduce your carbon footprint while still enjoying the beauty of the world.</p>
-                    </div>
-                    <div class="article-footer">
-                        <span>Yuri De Guzman</span>
-                        <span><a href="resp.html">Read more</a></span>
-                    </div>
-                </div>
-    </section>
+  <script>
+    function searchArticles() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const articles = document.querySelectorAll('.article');
+
+      articles.forEach(article => {
+        const title = article.getAttribute('data-title').toLowerCase();
+        article.style.display = title.includes(input) ? 'flex' : 'none';
+      });
+    }
+  </script>
 </body>
 </html>
